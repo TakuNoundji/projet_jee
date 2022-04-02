@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <th:block th:replace="fragments/_admin_css::css"></th:block>
+
+</head>
+
+<style>
+    .card {
+        background-color: #F7F7F7;
+        background-image: none;
+        border-color: #f7f7f7!important;
+        box-shadow: 0 2px 6px rgb(58 57 68 / 18%);
+    }
+</style>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <th:block th:replace="fragments/_admin_slidebar::admin_slidebar"></th:block>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <th:block th:replace="fragments/_admin_navbar::admin_navbar"></th:block>
+
+            <!-- Page content-->
+            <div class="container-fluid">
+                <div class="row mt-4">
+                    <div class="col-sm-3 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <span><i class="fas fa-users" style="color:rgb(0, 162, 255);font-size:35px;"></i> </span>
+                                </div>
+                                <h5 class="card-title text-uppercase text-center mt-2">Utilisateurs </h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-secondary ">Voir Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="text-center">
+                                <span><i class="fas fa-car" style="color:rgb(0, 162, 255);font-size:35px;"></i> </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase text-center mt-2">Véhicules</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-secondary ">Voir Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="text-center">
+                                <span><i class="fas fa-check" style="color:rgb(0, 162, 255);font-size:35px;"></i> </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title  text-uppercase text-center mt-2">Publication validé</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-secondary ">Voir Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <span><i class="fas fa-exclamation-triangle" style="color:rgb(0, 162, 255);font-size:35px;"></i> </span>
+                                </div>
+                                <h5 class="card-title text-center text-uppercase mt-2">publication réjéter</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-secondary ">Voir Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Bootstrap core JS-->
+            <th:block th:replace="fragments/_admin_js::js"></th:block>
+</body>
+
+</html>

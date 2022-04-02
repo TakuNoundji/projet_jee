@@ -1,0 +1,19 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="admin_slidebar">
+
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom " style="background-color: rgba(36, 138, 253, 0.2);"><i class="fas fa-car" style="color:rgb(0, 162, 255);"></i>&nbsp;&nbsp;CAR ADMIN</div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" th:href="@{/admin}"> <i class="fas fa-home"></i> Dashboard</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" th:href="@{/liste}"><i class="fas fa-newspaper"></i>&nbsp;&nbsp;Publications</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
+
+        </div>
+    </div>
+
+</th:block>
+
+</html>
